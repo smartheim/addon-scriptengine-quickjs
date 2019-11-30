@@ -1,0 +1,39 @@
+[package]
+name = "ohx-scriptengine-quickjs"
+version = "0.1.0"
+authors = ["David Graeff <david.graeff@web.de>"]
+description = "OHX is a modern smarthome solution, embracing technologies like software containers for language agnostic extensibility. Written in Rust with an extensive test suite, OHX is fast, efficient, secure and fun to work on."
+readme = "../readme.md"
+homepage = "https://github.com/openhab-nodes/core/scriptengine_quickjs"
+repository = "https://github.com/openhab-nodes/core"
+keywords = ["smarthome","smart-home"]
+categories = []
+license = "MIT"
+edition = "2018"
+
+# Render the readme file on doc.rs
+[package.metadata.docs.rs]
+features = [ "external_doc" ]
+
+[badges]
+is-it-maintained-open-issues = { repository = "openhab-nodes/core" }
+is-it-maintained-issue-resolution = { repository = "openhab-nodes/core" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+# General
+serde = { version = "1.0.101", features = ["derive"] }
+serde_json = "1.0.41"
+serde_derive = "1.0.101"
+log = "0.4.8"
+env_logger = "0.7.0"
+structopt = "0.3.2"
+foreign-types = "0.4"
+qjs = {version="0.1",path="../qjs"}
+failure = "0.1.6"
+
+futures-core =  { version = "^0.3.0"}
+futures-util =  { version = "^0.3.0"}
+futures-channel =  { version = "^0.3.0"}
+tokio = { version = "0.2.0", features = ["sync","net","signal"] }
+pin-utils = "0.1.0-alpha.4"

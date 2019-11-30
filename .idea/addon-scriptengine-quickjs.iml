@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/scriptengine_quickjs/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scriptengine_quickjs/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scriptengine_quickjs/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/scriptengine_quickjs/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/qjs-sys/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qjs-sys/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qjs-sys/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/qjs-sys/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/qjs/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qjs/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qjs/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/qjs/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/qjs-sys/target" />
+      <excludeFolder url="file://$MODULE_DIR$/qjs/target" />
+      <excludeFolder url="file://$MODULE_DIR$/scriptengine_quickjs/target" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

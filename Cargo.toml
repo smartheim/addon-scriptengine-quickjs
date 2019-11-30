@@ -1,0 +1,9 @@
+[workspace]
+members=["qjs-sys","qjs","scriptengine_quickjs"]
+
+[profile.release]
+lto = true
+
+[patch.crates-io]
+qjs-sys = {path="qjs-sys"}
+qjs = {path="qjs"}

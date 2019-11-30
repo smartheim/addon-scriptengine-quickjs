@@ -1,0 +1,50 @@
+[package]
+name = "qjs-sys"
+version = "0.1.2"
+authors = ["Flier Lu <flier.lu@gmail.com>"]
+description = "Native bindings to the QuickJS Javascript Engine"
+repository = "https://github.com/flier/rust-quickjs"
+license = "MIT"
+keywords = ["javascript", "quickjs"]
+categories = ["api-bindings"]
+edition = "2018"
+
+[badges]
+appveyor = { repository = "flier/rust-quickjs", branch = "master", service = "github" }
+travis-ci = { repository = "flier/rust-quickjs", branch = "master" }
+
+[features]
+default = ["bignum", "repl", "qjscalc", "pic"]
+bignum = []
+repl = []
+qjscalc = ["bignum"]
+lto = []
+pic = []
+debug = []
+gen = ["bindgen"]
+dump_free = []
+dump_closure = []
+dump_bytecode = []
+dump_gc = []
+dump_gc_free = []
+dump_leaks = []
+dump_mem = []
+dump_objects = []
+dump_atoms = []
+dump_shapes = []
+dump_module_resolve = []
+dump_promise = []
+dump_read_object = []
+
+[dependencies]
+cfg-if = "0.1"
+lazy_static = "1.3"
+
+[build-dependencies]
+failure = "0.1"
+lazy_static = "1.3"
+regex = "1"
+cc = "1.0"
+bindgen = { version = "0.51", optional = true }
+rust-lzma = "0.4"
+tar = "0.4"

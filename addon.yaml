@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  ohx-addon-scriptengine-quickjs:
+    build_cmd: sh build.sh
+
+x-ohx-registry:
+  id: ohx-addon-scriptengine-quickjs
+  version: "0.1.0"
+  type: scriptengine
+  license: "MIT"
+  authors: ["David Gräff"]
+  title: "Javascript for the Rule engine"
+  description: "ES2020 JS engine based on QuickJS for rule engine scripts"
+  status:
+    code: AVAILABLE
+  homepage: "https://github.com/openhab-nodes/addon-scriptengine-quickjs"
+  github: "https://github.com/openhab-nodes/addon-scriptengine-quickjs"
+
