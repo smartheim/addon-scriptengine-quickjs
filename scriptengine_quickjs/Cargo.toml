@@ -35,5 +35,5 @@ failure = "0.1.6"
 futures-core =  { version = "^0.3.0"}
 futures-util =  { version = "^0.3.0"}
 futures-channel =  { version = "^0.3.0"}
-tokio = { version = "0.2.0", features = ["sync","net","signal"] }
+tokio = { version = "1.8.4", features = ["sync","net","signal"] }
 pin-utils = "0.1.0-alpha.4"
